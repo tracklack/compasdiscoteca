@@ -8,13 +8,56 @@
         * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
         body {
             height: 100vh;
             background: url('https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cmpd.png') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .links {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black box */
+            padding: 10px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%; /* Ensure it stretches across for smaller screens */
+            max-width: 400px;
+        }
+        .links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .links a:hover {
+            background: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+        }
+        @media (max-width: 768px) {
+            .links {
+                padding: 15px;
+            }
+            .links a {
+                display: block;
+                margin: 10px 0;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="links">
+        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
+        <a href="mailto:info@heartsoundent.com">Email Inquiry</a>
+        <a href="https://www.youtube.com/watch?v=example" target="_blank">Watch</a>
+    </div>
 </body>
 </html>
