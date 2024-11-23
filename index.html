@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Landing Page</title>
+    <title>Responsive Landing Page</title>
     <style>
         * {
             margin: 0;
@@ -12,48 +12,51 @@
         }
         body {
             height: 100vh;
-            background: url('https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cmpd.png') no-repeat center center/cover;
+            background-color: #FFBD59; /* New background color */
             display: flex;
             flex-direction: column;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            font-family: Arial, sans-serif;
-            color: white;
+            font-family: 'Old Standard TT', serif; /* Old English or Gangster-style font */
+            text-align: center;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&display=swap');
+        
+        img {
+            max-width: 50%;
+            height: auto;
+            margin-bottom: 20px;
         }
         .links {
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black box */
-            padding: 10px 20px;
-            border-radius: 10px;
-            margin-bottom: 20px;
-            text-align: center;
-            width: 100%; /* Ensure it stretches across for smaller screens */
-            max-width: 400px;
+            margin-top: 20px;
         }
         .links a {
-            color: white;
+            color: black; /* Gangster-styled text in black */
             text-decoration: none;
-            font-size: 18px;
-            margin: 10px 15px;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
+            font-size: 20px;
+            margin: 10px 20px;
+            padding: 0; /* Remove background highlighting */
+            font-family: 'Old Standard TT', serif;
+            transition: color 0.3s ease;
         }
         .links a:hover {
-            background: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+            color: white; /* Highlight link text on hover */
         }
         @media (max-width: 768px) {
-            .links {
-                padding: 15px;
+            img {
+                max-width: 70%; /* Adjust logo size for smaller screens */
             }
             .links a {
-                display: block;
+                display: block; /* Stack links vertically on mobile */
                 margin: 10px 0;
-                font-size: 16px;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Replace 'your-logo.png' with the name of your logo file -->
+    <img src="your-logo.png" alt="Logo">
+
     <div class="links">
         <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
         <a href="mailto:info@heartsoundent.com">Email Inquiry</a>
