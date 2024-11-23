@@ -24,9 +24,10 @@
             align-items: center;
             font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
             text-align: center;
+            position: relative; /* For footer positioning */
         }
         img {
-            max-width: 300px; /* Logo size */
+            max-width: 400px; /* Ensure the logo remains large */
             height: auto;
             margin-bottom: 20px;
         }
@@ -36,7 +37,7 @@
         .links a {
             color: black; /* Old English-styled text in black */
             text-decoration: none;
-            font-size: 20px;
+            font-size: 24px;
             margin: 10px 20px;
             font-family: 'UnifrakturMaguntia', serif; /* Old English font for links */
             transition: color 0.3s ease;
@@ -45,13 +46,14 @@
             color: white; /* Highlight link text on hover */
         }
         .footer {
-            margin-top: auto;
-            padding: 20px;
+            position: absolute;
+            bottom: 20px; /* Pin to bottom */
             text-align: center;
+            width: 100%;
         }
         .footer a {
             color: black;
-            font-size: 18px;
+            font-size: 20px;
             text-decoration: none;
             font-family: 'UnifrakturMaguntia', serif;
         }
@@ -60,7 +62,7 @@
         }
         @media (max-width: 768px) {
             img {
-                max-width: 200px; /* Adjust logo size for smaller screens */
+                max-width: 300px; /* Adjust logo size for smaller screens */
             }
             .links a {
                 display: block; /* Stack links vertically on mobile */
