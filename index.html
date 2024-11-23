@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compas Discoteca</title>
-    <!-- Google Font Link -->
+    <!-- Google Font for Old English Style -->
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
+        /* Reset and Global Styles */
         * {
             margin: 0;
             padding: 0;
@@ -25,7 +26,7 @@
             text-align: center;
         }
         img {
-            max-width: 50%;
+            max-width: 300px; /* Set a fixed size for consistent rendering */
             height: auto;
             margin-bottom: 20px;
         }
@@ -37,7 +38,6 @@
             text-decoration: none;
             font-size: 20px;
             margin: 10px 20px;
-            padding: 0; /* Remove background highlighting */
             font-family: 'UnifrakturMaguntia', serif; /* Old English font for links */
             transition: color 0.3s ease;
         }
@@ -46,7 +46,7 @@
         }
         @media (max-width: 768px) {
             img {
-                max-width: 70%; /* Adjust logo size for smaller screens */
+                max-width: 200px; /* Adjust logo size for smaller screens */
             }
             .links a {
                 display: block; /* Stack links vertically on mobile */
@@ -56,9 +56,9 @@
     </style>
 </head>
 <body>
-    <!-- Updated Logo URL -->
+    <!-- Logo -->
     <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cdc.png" alt="Compas Discoteca Logo">
-
+    <!-- Links -->
     <div class="links">
         <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
         <a href="mailto:info@heartsoundent.com">Email</a>
