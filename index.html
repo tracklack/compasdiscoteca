@@ -21,7 +21,7 @@
             text-align: center;
             position: relative;
             min-height: 100vh;
-            padding-bottom: 50px; /* Space for footer */
+            padding-bottom: 60px; /* Space for footer */
         }
         img {
             max-width: 90%; /* Logo size */
@@ -29,24 +29,8 @@
             height: auto;
             margin: 40px auto;
         }
-        .links {
-            margin: 20px 0;
-        }
-        .links a {
-            display: inline-block;
-            color: black;
-            font-size: 20px;
-            font-family: 'UnifrakturMaguntia', serif; /* Old English font */
-            text-decoration: none;
-            margin: 0 15px;
-            padding: 10px 20px;
-            border: 2px solid black;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .links a:hover {
-            background-color: black;
-            color: white;
+        .button-container {
+            margin-top: 20px;
         }
         .about-button {
             display: inline-block;
@@ -59,11 +43,29 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 30px;
         }
         .about-button:hover {
             background-color: white;
             color: black;
+        }
+        .links {
+            margin: 20px 0;
+        }
+        .links a {
+            display: inline-block;
+            color: black;
+            font-size: 20px;
+            font-family: 'UnifrakturMaguntia', serif; /* Old English font */
+            text-decoration: none;
+            margin: 10px 20px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            background-color: black;
+            color: white;
         }
         .about-section {
             display: none; /* Hidden by default */
@@ -74,7 +76,6 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            position: relative;
         }
         .about-header {
             font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
@@ -86,19 +87,16 @@
             font-size: 16px;
             line-height: 1.6;
         }
-        .video-container {
-            float: left;
-            width: 120px;
-            height: 120px;
-            margin-right: 20px;
-            background: black;
-            border-radius: 5px;
-            overflow: hidden;
-        }
-        .video-container video {
+        .image-container {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 400px;
+            margin: 0 auto 20px; /* Center the image and add spacing */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .footer {
             position: absolute;
@@ -121,12 +119,6 @@
                 max-width: 95%; /* Smaller logo for mobile */
                 max-height: 400px;
             }
-            .video-container {
-                float: none;
-                margin: 10px auto;
-                width: 100%;
-                height: 200px;
-            }
             .links a {
                 display: block;
                 margin: 10px auto;
@@ -138,53 +130,19 @@
     <!-- Logo -->
     <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cdc.png" alt="Compas Discoteca Logo">
 
+    <!-- About Button -->
+    <div class="button-container">
+        <button class="about-button" onclick="toggleAbout()">About</button>
+    </div>
+
     <!-- Main Links -->
     <div class="links">
         <a href="mailto:info@heartsoundent.com">Email</a>
         <a href="https://www.instagram.com/compasdiscoteca" target="_blank">Instagram</a>
     </div>
 
-    <!-- About Button -->
-    <button class="about-button" onclick="toggleAbout()">About</button>
-
     <!-- About Section -->
     <div class="about-section" id="aboutSection">
-        <div class="video-container">
-            <video autoplay muted loop playsinline>
-                <source src="my-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="about-content">
-            <h1 class="about-header">About Compas Discoteca</h1>
-            <p>
-                Welcome to Compas Discoteca! We are dedicated to providing an unforgettable experience with incredible music, vibes, and community. Whether you're here to discover more about us or reach out, we're excited to connect with you.
-            </p>
-            <p>
-                Feel free to check out our Instagram or send us an email for inquiries. We look forward to hearing from you!
-            </p>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
-        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
-    </div>
-
-    <script>
-        // Function to toggle the About section visibility
-        function toggleAbout() {
-            const aboutSection = document.getElementById('aboutSection');
-            if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
-                aboutSection.style.display = 'block';
-                window.scrollTo({
-                    top: aboutSection.offsetTop,
-                    behavior: 'smooth',
-                });
-            } else {
-                aboutSection.style.display = 'none';
-            }
-        }
-    </script>
-</body>
-</html>
+        <!-- Image Placeholder -->
+        <div class="image-container">
+            <img src=
