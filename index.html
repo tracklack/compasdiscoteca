@@ -20,9 +20,11 @@
             font-family: Arial, sans-serif;
             text-align: center;
             position: relative;
+            min-height: 100vh;
         }
         img {
-            max-width: 400px; /* Logo size */
+            max-width: 90%; /* Logo size */
+            max-height: 700px;
             height: auto;
             margin: 40px auto;
         }
@@ -66,11 +68,10 @@
             line-height: 1.6;
         }
         .video-container {
-            position: absolute;
-            top: 20px;
-            left: -120px; /* Adjust position for small video */
-            width: 100px;
-            height: 100px;
+            float: left;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
             background: black;
             border-radius: 5px;
             overflow: hidden;
@@ -80,21 +81,32 @@
             height: 100%;
             object-fit: cover;
         }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-family: 'UnifrakturMaguntia', serif;
+        }
+        .footer a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .footer a:hover {
+            color: white;
+        }
         @media (max-width: 768px) {
             img {
-                max-width: 300px; /* Smaller logo size for mobile */
-            }
-            .about-section {
-                margin: 20px auto;
-                padding: 15px;
+                max-width: 95%; /* Smaller logo for mobile */
+                max-height: 400px;
             }
             .video-container {
-                position: relative;
+                float: none;
                 margin: 10px auto;
-                top: auto;
-                left: auto;
-                width: 200px;
-                height: 150px;
+                width: 100%;
+                height: 200px;
             }
         }
     </style>
@@ -125,6 +137,11 @@
                 Feel free to check out our Instagram or send us an email for inquiries. We look forward to hearing from you!
             </p>
         </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
     </div>
 
     <script>
