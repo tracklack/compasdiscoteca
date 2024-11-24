@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Compas Discoteca</title>
+    <title>Compas Discoteca</title>
     <!-- Google Font for Old English Style -->
     <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <!-- Favicon -->
@@ -20,43 +20,71 @@
             background-color: #FFBD59; /* Background color */
             display: flex;
             flex-direction: column;
-            justify-content: flex-start; /* Align content to the top */
+            justify-content: center;
             align-items: center;
             font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
             text-align: center;
+            position: relative; /* For footer positioning */
         }
         img {
-            max-width: 200px; /* Smaller logo size for About page */
+            width: 90%; /* Make the logo take up 90% of the screen width */
+            max-width: 900px; /* Ensure it remains large on desktops */
             height: auto;
+            margin-bottom: 30px; /* Add some spacing below the logo */
+        }
+        .links {
             margin-top: 20px;
         }
-        .content {
-            margin: 50px 20px;
-            font-size: 18px;
-            font-family: Arial, sans-serif; /* Simple font for readable text */
-            line-height: 1.6;
-            max-width: 800px;
+        .links a {
+            color: black; /* Old English-styled text in black */
+            text-decoration: none;
+            font-size: 24px;
+            margin: 10px 20px;
+            font-family: 'UnifrakturMaguntia', serif; /* Old English font for links */
+            transition: color 0.3s ease;
+        }
+        .links a:hover {
+            color: white; /* Highlight link text on hover */
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px; /* Pin footer to the bottom */
             text-align: center;
+            width: 100%;
+        }
+        .footer a {
+            color: black;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'UnifrakturMaguntia', serif;
+        }
+        .footer a:hover {
+            color: white;
         }
         @media (max-width: 768px) {
             img {
-                max-width: 150px; /* Adjust logo size for smaller screens */
+                width: 95%; /* Ensure the logo takes most of the space on smaller screens */
+                max-width: 600px; /* Scale down for mobile devices */
+            }
+            .links a {
+                display: block; /* Stack links vertically on mobile */
+                margin: 10px 0;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Logo at the Top -->
+    <!-- Logo in the Middle -->
     <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cdc.png" alt="Compas Discoteca Logo">
-    <!-- Content -->
-    <div class="content">
-        <h1>About Compas Discoteca</h1>
-        <p>
-            Welcome to Compas Discoteca! We are dedicated to providing an unforgettable experience with incredible music, vibes, and community. Whether you're here to discover more about us or reach out, we're excited to connect with you.
-        </p>
-        <p>
-            Feel free to check out our Instagram or send us an email for inquiries. We look forward to hearing from you!
-        </p>
+    <!-- Main Links -->
+    <div class="links">
+        <a href="about.html">About</a>
+        <a href="mailto:info@heartsoundent.com">Email</a>
+        <a href="https://www.instagram.com/compasdiscoteca" target="_blank">Instagram</a>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
     </div>
 </body>
 </html>
