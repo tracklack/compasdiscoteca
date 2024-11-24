@@ -145,4 +145,38 @@
     <div class="about-section" id="aboutSection">
         <!-- Image Placeholder -->
         <div class="image-container">
-            <img src=
+            <img src="https://github.com/tracklack/compasdiscoteca/blob/8a120b673c753f99cf23e69ef0c59147ab1ae1a3/compasgroup.png" alt="About Image Placeholder">
+        </div>
+        <div class="about-content">
+            <h1 class="about-header">About Compas Discoteca</h1>
+            <p>
+                Welcome to Compas Discoteca! We are dedicated to providing an unforgettable experience with incredible music, vibes, and community. Whether you're here to discover more about us or reach out, we're excited to connect with you.
+            </p>
+            <p>
+                Feel free to check out our Instagram or send us an email for inquiries. We look forward to hearing from you!
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
+    </div>
+
+    <script>
+        // Function to toggle the About section visibility
+        function toggleAbout() {
+            const aboutSection = document.getElementById('aboutSection');
+            if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
+                aboutSection.style.display = 'block';
+                window.scrollTo({
+                    top: aboutSection.offsetTop,
+                    behavior: 'smooth',
+                });
+            } else {
+                aboutSection.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
