@@ -24,13 +24,11 @@
             align-items: center;
             font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
             text-align: center;
-            position: relative; /* For footer positioning */
         }
         img {
-            width: 90%; /* Make the logo take up 90% of the screen width */
-            max-width: 900px; /* Ensure it remains large on desktops */
+            max-width: 300px; /* Set a fixed size for consistent rendering */
             height: auto;
-            margin-bottom: 30px; /* Add some spacing below the logo */
+            margin-bottom: 20px;
         }
         .links {
             margin-top: 20px;
@@ -38,7 +36,7 @@
         .links a {
             color: black; /* Old English-styled text in black */
             text-decoration: none;
-            font-size: 24px;
+            font-size: 20px;
             margin: 10px 20px;
             font-family: 'UnifrakturMaguntia', serif; /* Old English font for links */
             transition: color 0.3s ease;
@@ -46,25 +44,9 @@
         .links a:hover {
             color: white; /* Highlight link text on hover */
         }
-        .footer {
-            position: absolute;
-            bottom: 20px; /* Pin footer to the bottom */
-            text-align: center;
-            width: 100%;
-        }
-        .footer a {
-            color: black;
-            font-size: 20px;
-            text-decoration: none;
-            font-family: 'UnifrakturMaguntia', serif;
-        }
-        .footer a:hover {
-            color: white;
-        }
         @media (max-width: 768px) {
             img {
-                width: 95%; /* Ensure the logo takes most of the space on smaller screens */
-                max-width: 600px; /* Scale down for mobile devices */
+                max-width: 200px; /* Adjust logo size for smaller screens */
             }
             .links a {
                 display: block; /* Stack links vertically on mobile */
@@ -74,17 +56,13 @@
     </style>
 </head>
 <body>
-    <!-- Logo in the Middle -->
+    <!-- Logo -->
     <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cdc.png" alt="Compas Discoteca Logo">
-    <!-- Main Links -->
+    <!-- Links -->
     <div class="links">
-        <a href="about.html">About</a>
+        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
         <a href="mailto:info@heartsoundent.com">Email</a>
         <a href="https://www.instagram.com/compasdiscoteca" target="_blank">Instagram</a>
-    </div>
-    <!-- Footer -->
-    <div class="footer">
-        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
     </div>
 </body>
 </html>
