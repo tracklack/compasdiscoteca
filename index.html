@@ -1,186 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compas Discoteca</title>
-    <!-- Google Font for Old English Style -->
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        /* Reset and Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            background-color: #FFBD59; /* Background color */
-            font-family: Arial, sans-serif;
-            text-align: center;
-            position: relative;
-            min-height: 100vh;
-            padding-bottom: 60px; /* Space for footer */
-        }
-        img {
-            max-width: 90%; /* Logo size */
-            max-height: 700px;
-            height: auto;
-            margin: 40px auto;
-        }
-        .button-container {
-            margin-top: 20px;
-        }
-        .about-button {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 22px;
-            font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .about-button:hover {
-            background-color: white;
-            color: black;
-        }
-        .links {
-            margin: 20px 0;
-        }
-        .links a {
-            display: inline-block;
-            color: black;
-            font-size: 20px;
-            font-family: 'UnifrakturMaguntia', serif; /* Old English font */
-            text-decoration: none;
-            margin: 10px 20px;
-            padding: 10px 20px;
-            border: 2px solid black;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-        }
-        .links a:hover {
-            background-color: black;
-            color: white;
-        }
-        .about-section {
-            display: none; /* Hidden by default */
-            margin: 40px auto;
-            width: 90%;
-            max-width: 800px;
-            background-color: black; /* Black background */
-            color: white; /* White text */
-            padding: 20px;
-            border-radius: 10px;
-            transition: all 0.5s ease; /* Smooth appearance */
-            text-align: center; /* Center text */
-        }
-        .about-header {
-            font-family: 'UnifrakturMaguntia', serif; /* Old English-style font */
-            font-size: 28px;
-            margin-bottom: 20px;
-        }
-        .about-content {
-            font-size: 16px;
-            line-height: 1.8;
-            color: white; /* Explicit white text */
-        }
-        .about-content p {
-            margin-bottom: 20px; /* Add spacing between paragraphs */
-        }
-        .image-container {
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto 20px; /* Center the image and add spacing */
-        }
-        .image-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .footer {
-            position: fixed;
-            bottom: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            font-family: 'UnifrakturMaguntia', serif;
-        }
-        .footer a {
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .footer a:hover {
-            color: white;
-        }
-        @media (max-width: 768px) {
-            img {
-                max-width: 95%; /* Smaller logo for mobile */
-                max-height: 400px;
-            }
-            .links a {
-                display: block;
-                margin: 10px auto;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Compas Discoteca | Vinyl Collective</title>
+  <meta name="description" content="Compas Discoteca is a vinyl collective from the Inland Empire, California.">
+  <meta property="og:title" content="Compas Discoteca | Vinyl Collective">
+  <meta property="og:description" content="A cornucopia of funkadelia and tropical grooves.">
+  <meta property="og:image" content="https://www.compasdiscoteca.com/assets/og.png">
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Logo -->
-    <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/main/cdc.png" alt="Compas Discoteca Logo">
+  <main class="shop">
+    <header>
+      <a href="#top" class="wordmark" aria-label="Compas Discoteca home"></a>
+      <a class="instagram" href="https://www.instagram.com/compasdiscoteca" target="_blank" rel="noreferrer">INSTAGRAM ↗</a>
+    </header>
 
-    <!-- About Button -->
-    <div class="button-container">
-        <button class="about-button" onclick="toggleAbout()">About</button>
-    </div>
+    <section id="top" class="crate-scene">
+      <div class="intro"><h1>Vinyl Collective from the Inland Empire, California</h1></div>
+      <p class="instruction"><span>↓</span> PICK A RECORD</p>
 
-    <!-- Main Links -->
-    <div class="links">
-        <a href="mailto:info@heartsoundent.com">Email</a>
-        <a href="https://www.instagram.com/compasdiscoteca" target="_blank">Instagram</a>
-    </div>
+      <div class="record-nav" role="tablist" aria-label="Explore Compas Discoteca">
+        <button class="record record-1" role="tab" data-section="about"><span class="vinyl-45"><i></i></span><span class="sleeve-paper"></span><span class="record-title">About</span></button>
+        <button class="record record-2" role="tab" data-section="sound"><span class="vinyl-45"><i></i></span><span class="sleeve-paper"></span><span class="record-title">Our Sound</span></button>
+        <button class="record record-3" role="tab" data-section="events"><span class="vinyl-45"><i></i></span><span class="sleeve-paper"></span><span class="record-title">Events</span></button>
+        <button class="record record-4" role="tab" data-section="contact"><span class="vinyl-45"><i></i></span><span class="sleeve-paper"></span><span class="record-title">Contact</span></button>
+        <button class="record record-5" role="tab" data-section="shop"><span class="vinyl-45"><i></i></span><span class="sleeve-paper"></span><span class="record-title">Shop</span></button>
+      </div>
 
-    <!-- About Section -->
-    <div class="about-section" id="aboutSection">
-        <!-- Image -->
-        <div class="image-container">
-            <img src="https://raw.githubusercontent.com/tracklack/compasdiscoteca/8a120b673c753f99cf23e69ef0c59147ab1ae1a3/compasgroup.png" alt="Compas Discoteca Group">
-        </div>
-        <div class="about-content">
-            <h1 class="about-header">About</h1>
-            <p>
-                Born from years of friendship, music discovery, and trading vinyl, Compas Discoteca is a collective united out of a shared passion for the art of sound. Made up of four seasoned DJs—Ricardo, Albert, Adrian, and Elias—each member brings a distinct style, creating a dynamic fusion that defies categorization. From soulful tropical rhythms and undiscovered Latin gems to funk, disco, hip-hop, alternative, R&B, and beyond, the group curates a kaleidoscope of sound that celebrates both the familiar and the unexpected.
-            </p>
-            <p>
-                At its heart, Compas Discoteca isn’t just about moving feet on the dance floor—it’s about creating an atmosphere where music discovery and good times reign supreme. Whether spinning vinyl or embracing modern mediums, their performances weave together a story of shared passion and musical exploration. With years of experience rocking private events, clubs, lounges, and more, they thrive in any setting, delivering vibes that resonate with those who appreciate music’s timeless ability to connect.
-            </p>
-            <p>
-                Welcome to Compas Discoteca: a cornucopia of funkadelia and soulful grooves, where the dance floor meets the joy of discovery.
-            </p>
-        </div>
-    </div>
+      <aside id="record-details" class="details" aria-live="polite"></aside>
+    </section>
 
-    <!-- Footer -->
-    <div class="footer">
-        <a href="https://www.heartsoundent.com" target="_blank">Heart Sound Entertainment</a>
-    </div>
-
-    <script>
-        // Function to toggle the About section visibility
-        function toggleAbout() {
-            const aboutSection = document.getElementById('aboutSection');
-            if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
-                aboutSection.style.display = 'block';
-                aboutSection.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                aboutSection.style.display = 'none';
-            }
-        }
-    </script>
+    <footer><span>FUNKADELIA &amp; TROPICAL GROOVES</span><span>© 2026 COMPAS DISCOTECA</span></footer>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
