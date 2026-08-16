@@ -1,0 +1,22 @@
+@media (max-width: 800px) and (orientation: portrait) {
+  .crate-scene {
+    background-image: url("assets/record-shop-mobile-v2.png");
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .intro {
+    top: 37%;
+    left: 7vw;
+    width: 82vw;
+  }
+
+  .intro h1 {
+    font-size: 9.5vw;
+    line-height: .92;
+  }
+
+  .instruction {
+    bottom: 39%;
+  }
+}
